@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DVD Search</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+</head>
+<body>
+	<div id="results">
+
+		<h1><%= dvds.length %> DVDs found.</h1>
+
+		<table><tr><td><b><u>TITLE</u></td><td><b><u>AWARD</u></b></td></tr>
+
+    		<% dvds.forEach(function(dvd) { %>
+        		<tr>
+        			<td><%= dvd.title %></td>
+        			<td><%= dvd.award %></td>
+        		</tr>
+    		<% }); %>
+    	
+    	</table>
+
+	</div>
+</body>
+</html>
